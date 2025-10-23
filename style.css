@@ -1,0 +1,390 @@
+:root {
+    --ivory: #F8F5F0;
+    --deep-sage: #9BA88C;
+    --olive-sage: #8F9779;
+    --text: #5C5C5C;
+  }
+  
+  /* ===== Umum ===== */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--ivory);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ===== Hero Section ===== */
+  .hero {
+    padding: 40px 20px;
+  }
+  
+  .hero h1 {
+    color: var(--olive-sage);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 50;
+  }
+  
+  .hero h2 {
+    color: var(--deep-sage);
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--deep-sage);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--olive-sage);
+  }
+
+/* ===== Pembuka ===== */
+.pembuka {
+    background-color: var(--ivory);
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .pembuka .kepada {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .pembuka .tamu {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--olive-sage);
+    margin-bottom: 40px;
+  }
+  
+  .pembuka .salam {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 15px;
+  }
+  
+  .pembuka .isi {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+  
+  .pembuka .nama {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--olive-sage);
+    margin: 10px 0;
+    font-style: italic;
+  }
+  
+  .pembuka .dengan {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: var(--text);
+  }
+  
+  .pembuka .tanggal {
+    font-weight: 600;
+    margin: 25px 0 40px;
+    font-size: 1rem;
+    color: var(--text);
+  }
+  
+  .pembuka .ayat {
+    background-color: #ffffff;
+    border-left: 4px solid var(--olive-sage);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .pembuka .ayat .referensi {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--deep-sage);
+  }
+  
+  /* Responsif */
+  @media (max-width: 600px) {
+    .pembuka {
+      padding: 60px 15px;
+    }
+    .pembuka .nama {
+      font-size: 1.5rem;
+    }
+    .pembuka .ayat {
+      font-size: 0.9rem;
+    }
+  }
+  
+/* ===== Detail Acara ===== */
+.details {
+    padding: 120px 20px;
+    background-color: #ffffff;
+    color: var(--text);
+    text-align: center;
+  }
+  
+  .details h3 {
+    color: var(--olive-sage);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .details p {
+    font-size: 1rem;
+    margin: 8px 0;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  
+  /* Garis pemisah halus */
+  .details hr {
+    width: 60px;
+    border: 0;
+    border-top: 2px solid var(--deep-sage);
+    margin: 20px auto 30px;
+    opacity: 0.5;
+  }
+  
+  /* Tombol "Lihat di Google Maps" */
+  .btn-outline {
+    display: inline-block;
+    border: 2px solid var(--deep-sage);
+    color: var(--deep-sage);
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--deep-sage);
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 600px) {
+    .details {
+      padding: 60px 10px;
+    }
+  
+    .details h3 {
+      font-size: 1.5rem;
+    }
+  
+    .details p {
+      font-size: 0.95rem;
+    }
+  
+    .btn-outline {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* ===== RSVP ===== */
+  .rsvp {
+    background-color: var(--deep-sage);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .rsvp input,
+  .rsvp select {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--deep-sage);
+    background-color: #ffffff;
+    appearance: none; /* hilangkan gaya default browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  /* efek hover dan focus agar terlihat lembut */
+  .rsvp {
+    background-color: var(--deep-sage);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .rsvp input,
+  .rsvp select {
+    width: 75%;
+    max-width: 260px;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: var(--deep-sage);
+    background-color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .rsvp input:focus,
+  .rsvp select:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* ikon dropdown kecil */
+  .rsvp select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23556b2f' viewBox='0 0 16 16'><path d='M1.5 5.5l6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 12px;
+    cursor: pointer;
+  }
+  
+  .rsvp button {
+    background-color: white;
+    color: var(--deep-sage);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  .rsvp button:hover {
+    background-color: var(--olive-sage);
+    color: white;
+  }
+  
+  /* ===== Penutup ===== */
+  .penutup {
+    padding: 60px 20px;
+  }
+  
+  footer {
+    font-size: 0.8rem;
+    color: var(--olive-sage);
+    margin-top: 30px;
+  }
+  
+  /* ===== Ornamen Daun Kering ===== */
+  .ornament {
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.5;
+  }
+  
+  .ornament.top {
+    background-image: url('https://cdn.pixabay.com/photo/2021/09/12/11/36/dried-flowers-6618166_1280.png');
+    transform: rotate(0deg);
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  
+  .ornament.bottom {
+    background-image: url('https://cdn.pixabay.com/photo/2021/09/12/11/36/dried-flowers-6618166_1280.png');
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+  
+  /* ===== Garis Pembatas Halus ===== */
+  .details::before,
+  .rsvp::before,
+  .penutup::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 20px auto;
+    background: linear-gradient(to right, transparent, var(--olive-sage), transparent);
+    opacity: 0.5;
+  }
+  
+  /* ===== Animasi Fade-in ===== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+
+  /* ===== Background Music Control ===== */
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--deep-sage);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  
+  #music-toggle:hover {
+    background-color: var(--olive-sage);
+  }
